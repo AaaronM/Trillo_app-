@@ -236,3 +236,246 @@
 }
 
 // ___________________GALLERY_______________________________
+
+.gallery {
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+// _________________OVERVIEW____________________
+
+.overview {
+
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-grey-light-2) ;
+    
+
+    &__heading{
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 1.5rem 3rem;
+    }
+
+    &__stars{
+        margin-right: auto;
+        display: flex;
+    }
+
+    &__icon-star,
+    &__icon-location{
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+
+
+    &__location{
+        font-size: 1.2rem;
+        display: flex;
+        vertical-align: center;
+
+    }
+
+    &__icon-location {
+        margin-right: .5rem;
+    }
+    &__rating{
+        background-color: var(--color-primary);
+        color: #fff;
+        margin-left: 3rem;
+        align-self: stretch;
+        padding: 0 2.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__rating-avrage{
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin-bottom: -3px ;
+    }
+
+    &__rating-count{
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+    
+
+
+}
+
+
+// ________________BTN_INLINE_____________
+
+.btn-inline {
+    border: none;
+    color: var(--color-primary);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s;
+
+
+    &:hover {
+        color: var(--color-grey-dark-1);
+        transform: scale(1.1);
+        
+    }
+
+    
+
+}
+
+
+// ______________________PARAGRAPH________________
+
+.paragraph:not(:last-of-type){
+    margin-bottom: 3rem;
+}
+// ______________________LIST ________________
+
+.list {
+    margin: 3rem;
+    list-style: none;
+    padding: 3rem 0;
+    border-top: 1px solid var(--color-grey-light-3);
+    border-bottom: 1px solid var(--color-grey-light-3);
+
+    display: flex;
+    flex-wrap: wrap;
+   
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: 3px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+
+    &__icon{
+        width: 2.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+
+}
+
+// ______________________RECOMMEND ________________
+
+.recommend {
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+    display: flex;
+    align-items: center;
+
+
+    &__count {
+        margin-right: auto;
+    }
+
+    &__friends {
+        
+    }
+
+    &__photo {
+        box-sizing: content-box;
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+            
+        }
+    }
+}
+
+// _____________________RVEIWES______________
+
+
+.review{
+
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-bottom: 4rem;
+    border-radius: 3rem;
+    position: relative;
+    
+   
+
+
+
+    &__text{
+        margin-bottom: 3rem;
+        z-index: 10;
+        position: relative;
+    }
+
+    &__user{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &__photo{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+        border: 3px solid var( --color-grey-light-4);
+        
+    }
+
+    &__user-box{
+        margin-right: auto;
+    }
+
+    &__user-name{
+        
+    }
+
+    &__user-date{
+        font-size: 1rem;
+        color: var( --color-grey-light-4);
+    }
+
+    &__rating{
+        font-size: 2.5rem;
+        color: var(--color-primary);
+    }
+
+
+    &::before {
+        content: "\201C";
+        position: absolute;
+        top: -3rem;
+        left: -.2rem;
+        font-size: 15rem;
+        color: var(--color-grey-light-2);
+        font-family: sans-serif;
+        line-height: 1;
+        z-index: 1;
+    }
+
+    
+}
